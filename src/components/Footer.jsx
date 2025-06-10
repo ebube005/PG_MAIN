@@ -1,18 +1,7 @@
-import "./Footer.css";
-import pglogo from "/logo2.svg";
-
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
-        <img src={pglogo} alt="Logo" className="footer-logo" />
-        <span className="footer-title">Preference Grammar Generator</span>
-      </div>
-      <div className="footer-rights">
-        © 2025 Preference Grammar Generator. All rights reserved.
-      </div>
+    <footer className="w-full py-4 px-8 bg-gray-100 text-center text-gray-500 text-sm border-t border-gray-200">
+      © 2025 Preference Grammar Generator. All rights reserved.
     </footer>
   );
 }
-
-export default Footer;

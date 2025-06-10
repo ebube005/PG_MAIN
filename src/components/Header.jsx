@@ -1,20 +1,14 @@
-import "./Header.css";
-import helplogo from "/help.svg";
-import pglogo from "/Symbol.svg";
+import Audio from "../assets/Audio.svg";
 
-function Header() {
+export default function Header() {
   return (
-    <header className="header">
-      <div className="header-left">
-        <img src={pglogo} alt="Logo" className="logo" />
-        <h1 className="title">Preference Grammar Generator</h1>
+    <header className="w-full flex items-center justify-between px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-500 shadow z-50">
+      <div className="flex items-center gap-3">
+        <img src={Audio} alt="Logo" className="w-9 h-9" />
+        <span className="text-white text-2xl font-bold">
+          Preference Grammar Generator
+        </span>
       </div>
-      <button className="help-button">
-        <img src={helplogo} alt="Help Icon" className="help-icon" />
-        <span>Help</span>
-      </button>
     </header>
   );
 }
-
-export default Header;
