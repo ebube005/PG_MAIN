@@ -1,11 +1,9 @@
 import { StrictMode } from "react";
-// import { createRoot } from "react-dom/client";
 import "./index.css";
 import UploadPage from "./pages/UploadPage.jsx";
 import TargetWordPage from "./pages/TargetWordPage.jsx";
 import CriteriaPage from "./pages/CriteriaPage.jsx";
 import ResultsPage from "./pages/ResultsPage.jsx";
-// import FirstPage from ".FirstPage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 
@@ -20,7 +18,5 @@ ReactDOM.createRoot(root).render(
         <Route path="/results" element={<ResultsPage />} />
       </Routes>
     </BrowserRouter>
-
-    {/* <FirstPage /> */}
   </StrictMode>
 );
