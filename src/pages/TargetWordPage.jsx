@@ -51,7 +51,7 @@ export default function TargetWordPage() {
       }
     } catch (err) {
       setIpa("");
-      setIpaError("IPA conversion failed");
+      setIpaError("IPA conversion failed", err);
     } finally {
       setLoading(false);
     }
@@ -98,7 +98,7 @@ export default function TargetWordPage() {
           <div className="flex flex-col gap-2">
             <button
               type="button"
-              className={`w-28 h-10 rounded-full text-white font-medium text-base self-end transition-colors ${
+              className={`w-28 h-10 rounded-full text-black  font-medium text-base self-end transition-colors ${
                 word.trim()
                   ? "bg-purple-500 hover:bg-purple-700"
                   : "bg-purple-500 opacity-50 cursor-not-allowed"
